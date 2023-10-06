@@ -11,10 +11,9 @@ function TodoList ({todoList, completeTask, deleteTask}){
                         <span style={{textDecoration: item.isCompleted ? "line-through" : ""}}>{item.task}</span>
                         {' '}
                         
-                        <Button variant="success" onClick={() => completeTask(item.id)}>√</Button>{' '}
-                        <Button variant="danger" onClick={() => deleteTask(item.id)}>X</Button>
-                        
-                   </li>     
+                        <Button variant="success" onClick={() => completeTask(item.id)}>Complete</Button>{' '}
+                        <Button variant="danger" onClick={() => deleteTask(item.id)}>Delete</Button>
+                    </li>     
                 ))
             }
         </ul>

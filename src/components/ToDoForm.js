@@ -19,7 +19,7 @@ function ToDoForm({addTask}) {
                     <Form.Label>Enter Task Here</Form.Label>
                     <Form.Control type="text" placeholder="Add new task here" value ={newTask} onChange={e => setNewTask(e.target.value)} />                    
                 </Form.Group>                
-                <Button variant="primary" type="submit">+</Button>
+                <Button variant="primary" type="submit">Add Task</Button>
             </Form>
         </div>
     );
